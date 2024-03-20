@@ -43,15 +43,10 @@ const Index = () => {
 
   return (
     <Box>
-      <Flex bg="gray.100" p={4} alignItems="center">
-        <Heading size="xl">Cologne Store</Heading>
-        <Spacer />
-        <IconButton aria-label="Cart" icon={<FaShoppingCart />} onClick={onOpen}>
-          <Badge ml="1" colorScheme="green">
-            {cart.length}
-          </Badge>
-        </IconButton>
-      </Flex>
+      <Box textAlign="center" py={10}>
+        <Heading as="h1" size="2xl">Welcome to our Cologne Store</Heading>
+        <Text fontSize="xl" mt={6}>Discover our latest featured fragrances</Text>
+      </Box>
 
       <Grid templateColumns="repeat(4, 1fr)" gap={6} p={10}>
         {colognes.map((cologne) => (
